@@ -1,0 +1,30 @@
+public class inheritance{
+	static class animal{
+		String breed;
+		String color;
+		void speak()
+		{
+			System.out.println("Animal");
+		}
+	}
+	static class dog extends animal{
+		void speak()
+		{
+			System.out.println("Dog");
+		}
+	}
+	static class cat extends animal{
+		void speak()
+		{
+			System.out.println("Cat");
+		}
+	}
+	public static void main(String[] x){
+	animal obj=new animal();
+	dog obj2=new dog();
+	cat obj3=new cat();
+	obj.speak();
+	obj2.speak();
+	obj3.speak();
+	}
+}
