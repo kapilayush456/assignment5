@@ -1,0 +1,22 @@
+public class overload{
+	static class print{
+		public void print(){
+			System.out.println("null argument");
+			}
+		public void print(int a){
+			System.out.println("integer");
+			}
+		public void print(float x){
+			System.out.println("float");
+			}
+		}
+	public static void main(String x[]){
+		int a=1;
+		float b=(float)2.5;
+		print obj=new print();
+		obj.print();
+		obj.print(a);
+		obj.print(b);
+		}
+}
+		
